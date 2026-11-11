@@ -104,3 +104,4 @@ export default function Leadership({ onOpenContact }) {
     </section>
   );
 }
+

@@ -19,8 +19,8 @@ const solutions = [
     title: 'Agentes de IA & Automação',
     tag: 'Autonomous Pipelines',
     description:
-      'Desenvolvimento de sistemas autônomos para produção de mídia, orquestração de APIs, fluxos inteligentes e redução de trabalho operacional.',
-    features: ['Pipelines Autônomos 24/7', 'Integração LLMs & APIs Google/YouTube', 'Processamento Assíncrono'],
+      'Desenvolvimento de sistemas autônomos para orquestração de dados, fluxos inteligentes e redução de trabalho operacional.',
+    features: ['Pipelines Autônomos 24/7', 'Integração LLMs & APIs Corporativas', 'Processamento Assíncrono'],
   },
   {
     icon: Server,
@@ -114,3 +114,4 @@ export default function Solutions({ onOpenContact }) {
     </section>
   );
 }
+

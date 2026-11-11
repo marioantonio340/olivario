@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ExternalLink, Terminal } from 'lucide-react';
 
-export default function Navbar({ currentPage, onNavigate, onOpenContact }) {
+export default function Navbar({ onOpenContact }) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -13,16 +13,8 @@ export default function Navbar({ currentPage, onNavigate, onOpenContact }) {
 
   const handleNavClick = (sectionId) => {
     setIsOpen(false);
-    if (currentPage !== 'home') {
-      onNavigate('home');
-      setTimeout(() => {
-        const el = document.getElementById(sectionId);
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    } else {
-      const el = document.getElementById(sectionId);
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
-    }
+    const el = document.getElementById(sectionId);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -40,7 +32,6 @@ export default function Navbar({ currentPage, onNavigate, onOpenContact }) {
             href="#top"
             onClick={(e) => {
               e.preventDefault();
-              onNavigate('home');
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
             className="flex items-center focus:outline-none py-2"
@@ -170,3 +161,4 @@ export default function Navbar({ currentPage, onNavigate, onOpenContact }) {
     </header>
   );
 }
+

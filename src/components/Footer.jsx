@@ -1,7 +1,12 @@
 import React from 'react';
-import { ExternalLink, Shield, FileText } from 'lucide-react';
+import { ExternalLink, Mail, MapPin, Linkedin, Github } from 'lucide-react';
 
-export default function Footer({ onNavigate }) {
+export default function Footer({ onOpenContact }) {
+  const scrollTo = (id) => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <footer className="bg-[#080E20] border-t border-slate-800/80 pt-16 pb-12 text-slate-400 text-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,10 +20,11 @@ export default function Footer({ onNavigate }) {
               className="h-9 w-auto object-contain"
             />
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
-              Desenvolvimento de soluções digitais robustas, elegantes e escaláveis. Engenharia de software de ponta, inteligência autônoma e arquiteturas sustentáveis.
+              Desenvolvimento de soluções digitais robustas, elegantes e escaláveis. Engenharia de software de ponta, inteligência pragmática e arquiteturas sustentáveis.
             </p>
-            <p className="text-xs font-mono text-slate-500">
-              Patos de Minas, MG • Brasil • CNPJ & Registro Oficial
+            <p className="text-xs font-mono text-slate-500 flex items-center gap-1.5">
+              <MapPin className="w-3.5 h-3.5 text-[#22C55E]" />
+              Patos de Minas, MG • Brasil
             </p>
           </div>
 
@@ -28,10 +34,7 @@ export default function Footer({ onNavigate }) {
             <ul className="space-y-2 text-sm">
               <li>
                 <button
-                  onClick={() => {
-                    onNavigate('home');
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                  }}
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   className="hover:text-[#22C55E] transition-colors"
                 >
                   Início
@@ -39,12 +42,15 @@ export default function Footer({ onNavigate }) {
               </li>
               <li>
                 <button
-                  onClick={() => {
-                    onNavigate('home');
-                    setTimeout(() => {
-                      document.getElementById('solucoes')?.scrollIntoView({ behavior: 'smooth' });
-                    }, 100);
-                  }}
+                  onClick={() => scrollTo('dna')}
+                  className="hover:text-[#22C55E] transition-colors"
+                >
+                  Essência & DNA
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollTo('solucoes')}
                   className="hover:text-[#22C55E] transition-colors"
                 >
                   Soluções & Serviços
@@ -52,15 +58,10 @@ export default function Footer({ onNavigate }) {
               </li>
               <li>
                 <button
-                  onClick={() => {
-                    onNavigate('home');
-                    setTimeout(() => {
-                      document.getElementById('dna')?.scrollIntoView({ behavior: 'smooth' });
-                    }, 100);
-                  }}
+                  onClick={() => scrollTo('arquitetura')}
                   className="hover:text-[#22C55E] transition-colors"
                 >
-                  DNA & Filosofia
+                  Engenharia
                 </button>
               </li>
               <li>
@@ -76,33 +77,38 @@ export default function Footer({ onNavigate }) {
             </ul>
           </div>
 
-          {/* Legal / Compliance (Essencial para Google Cloud & YouTube API) */}
+          {/* Contact & Channels */}
           <div className="md:col-span-4 space-y-3">
-            <h4 className="text-xs font-mono uppercase tracking-wider text-white">Governança & Políticas</h4>
+            <h4 className="text-xs font-mono uppercase tracking-wider text-white">Canais Oficiais</h4>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Em conformidade com a LGPD e políticas oficiais para serviços e integrações de APIs Google e YouTube.
+              Entre em contato diretamente com nossa engenharia para discutir arquitetura, sistemas sob medida ou consultoria.
             </p>
-            <div className="space-y-2 pt-1">
+            <div className="space-y-2.5 pt-1">
               <button
-                onClick={() => {
-                  onNavigate('privacy');
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }}
+                onClick={onOpenContact}
                 className="flex items-center gap-2 hover:text-[#22C55E] transition-colors text-sm"
               >
-                <Shield className="w-4 h-4 text-[#22C55E]" />
-                Política de Privacidade
+                <Mail className="w-4 h-4 text-[#22C55E]" />
+                contato@olivario.com.br
               </button>
-              <button
-                onClick={() => {
-                  onNavigate('terms');
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }}
+              <a
+                href="https://www.linkedin.com/in/mariofernandes340/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:text-[#22C55E] transition-colors text-sm"
               >
-                <FileText className="w-4 h-4 text-[#84CC16]" />
-                Termos de Serviço & Uso de APIs
-              </button>
+                <Linkedin className="w-4 h-4 text-[#0284C7]" />
+                LinkedIn Corporativo
+              </a>
+              <a
+                href="https://github.com/marioantonio340"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-[#22C55E] transition-colors text-sm"
+              >
+                <Github className="w-4 h-4 text-slate-300" />
+                GitHub
+              </a>
             </div>
           </div>
 

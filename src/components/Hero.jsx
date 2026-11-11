@@ -133,3 +133,4 @@ export default function Hero({ onOpenContact }) {
     </section>
   );
 }
+
