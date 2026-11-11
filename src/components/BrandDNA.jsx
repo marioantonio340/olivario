@@ -25,7 +25,7 @@ export default function BrandDNA() {
             </div>
             <h3 className="text-xl font-bold text-white mb-3">Soluções Feitas para Durar</h3>
             <p className="text-slate-300 leading-relaxed">
-              Inspirada na oliveira, nossa filosofia prioriza bases sólidas e confiáveis. Evitamos soluções improvisadas: estruturamos seu CRM, suas automações e seus sistemas para sustentar a expansão da sua empresa por anos.
+              Inspirada na oliveira, nossa filosofia prioriza bases sólidas e confiáveis. Evitamos soluções improvisadas: estruturamos seus processos, suas automações e seus sistemas para sustentar a expansão da sua empresa por anos.
             </p>
           </div>
 
@@ -48,7 +48,7 @@ export default function BrandDNA() {
               <h4 className="font-bold text-white text-lg">Nossa Missão</h4>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Transformar processos complexos em rotinas simples, seguras e altamente lucrativas através de CRM, IA e sistemas sob medida.
+              Transformar processos complexos em rotinas simples, seguras e altamente eficientes através de automação, IA e sistemas sob medida.
             </p>
           </div>
 

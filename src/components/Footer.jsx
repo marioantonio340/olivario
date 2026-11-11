@@ -20,7 +20,7 @@ export default function Footer({ onOpenContact }) {
               className="h-9 w-auto object-contain"
             />
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
-              Consultoria Salesforce, soluções em Inteligência Artificial e desenvolvimento de plataformas corporativas para empresas que buscam eficiência e escala comercial.
+              Desenvolvimento de sistemas sob medida, soluções em Inteligência Artificial e automação de processos para empresas que buscam eficiência e escala.
             </p>
             <p className="text-xs text-slate-500 flex items-center gap-1.5">
               <MapPin className="w-3.5 h-3.5 text-[#22C55E]" />
@@ -45,7 +45,7 @@ export default function Footer({ onOpenContact }) {
                   onClick={() => scrollTo('solucoes')}
                   className="hover:text-[#22C55E] transition-colors"
                 >
-                  Soluções & Salesforce
+                  Soluções
                 </button>
               </li>
               <li>
@@ -108,7 +108,7 @@ export default function Footer({ onOpenContact }) {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <p>© {new Date().getFullYear()} Olivario Software (olivario.com.br). Todos os direitos reservados.</p>
-          <p>Consultoria Salesforce • Inteligência Artificial • Soluções Empresariais</p>
+          <p>Sistemas Sob Medida • Inteligência Artificial • Soluções Empresariais</p>
         </div>
       </div>
     </footer>

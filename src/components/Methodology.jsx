@@ -6,7 +6,7 @@ const steps = [
     icon: Search,
     step: '01',
     title: 'Diagnóstico de Negócio',
-    desc: 'Mapeamos seus gargalos comerciais e operacionais para identificar exatamente onde Salesforce, IA ou automações trarão maior impacto.'
+    desc: 'Mapeamos seus gargalos comerciais e operacionais para identificar exatamente onde sistemas, IA ou automações trarão maior impacto.'
   },
   {
     icon: Map,
@@ -83,7 +83,7 @@ export default function Methodology({ onOpenContact }) {
         <div className="mt-14 rounded-2xl bg-gradient-to-r from-[#0B132B] via-[#0F172A] to-[#0B132B] border border-[#22C55E]/25 p-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-xl font-bold text-white">
-              Quer entender como aplicar Salesforce ou IA na realidade da sua empresa?
+              Quer entender como aplicar automação, sistemas ou IA na realidade da sua empresa?
             </h3>
             <p className="text-slate-400 text-sm mt-1">
               Agende uma conversa de 30 minutos sem compromisso para mapearmos suas oportunidades de melhoria.
@@ -100,3 +100,4 @@ export default function Methodology({ onOpenContact }) {
     </section>
   );
 }
+

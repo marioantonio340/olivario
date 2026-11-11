@@ -36,7 +36,7 @@ export default function ContactModal({ isOpen, onClose }) {
         </div>
 
         <p className="text-sm text-slate-300 leading-relaxed mb-6">
-          Quer estruturar o Salesforce da sua empresa, implementar agentes de Inteligência Artificial ou automatizar processos internos? Entre em contato direto conosco.
+          Quer desenvolver um sistema sob medida, implementar agentes de Inteligência Artificial ou automatizar processos internos? Entre em contato direto conosco.
         </p>
 
         <div className="space-y-3">

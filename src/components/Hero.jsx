@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Sparkles, TrendingUp, Cloud, Bot, Layers, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Sparkles, TrendingUp, Laptop, Bot, Layers, CheckCircle2 } from 'lucide-react';
 
 export default function Hero({ onOpenContact }) {
   return (
@@ -15,16 +15,16 @@ export default function Hero({ onOpenContact }) {
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0F172A] border border-[#22C55E]/30 text-xs sm:text-sm font-medium text-emerald-400 shadow-inner">
               <Sparkles className="w-4 h-4 text-[#84CC16]" />
-              <span>Consultoria Salesforce & Soluções de Inteligência Artificial</span>
+              <span>Soluções Digitais Corporativas & Inteligência Artificial</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
               Aceleramos os resultados da sua empresa com{' '}
-              <span className="gradient-tech">Salesforce e IA.</span>
+              <span className="gradient-tech">Tecnologia e IA.</span>
             </h1>
 
             <p className="text-lg sm:text-xl text-slate-300 max-w-2xl leading-relaxed mx-auto lg:mx-0">
-              Estruturamos sua operação comercial, implementamos agentes de Inteligência Artificial que eliminam o trabalho manual e integramos seus sistemas para sua equipe focar no que realmente importa: vender e atender melhor.
+              Criamos sistemas sob medida, implementamos soluções de Inteligência Artificial que eliminam o trabalho manual e conectamos os processos da sua operação para sua equipe vender e atender muito melhor.
             </p>
 
             <div className="pt-2 flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
@@ -47,15 +47,15 @@ export default function Hero({ onOpenContact }) {
             {/* B2B Trust Indicators */}
             <div className="pt-6 grid grid-cols-3 gap-4 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0">
               <div>
-                <p className="text-lg sm:text-xl font-bold text-white">Salesforce</p>
-                <p className="text-xs text-slate-400 mt-0.5">CRM & Vendas</p>
+                <p className="text-lg sm:text-xl font-bold text-white">Sob Medida</p>
+                <p className="text-xs text-slate-400 mt-0.5">Sistemas & Web</p>
               </div>
               <div>
                 <p className="text-lg sm:text-xl font-bold text-[#22C55E]">IA Aplicada</p>
                 <p className="text-xs text-slate-400 mt-0.5">Automação Real</p>
               </div>
               <div>
-                <p className="text-lg sm:text-xl font-bold text-[#84CC16]">Sob Medida</p>
+                <p className="text-lg sm:text-xl font-bold text-[#84CC16]">Integração</p>
                 <p className="text-xs text-slate-400 mt-0.5">Foco em ROI</p>
               </div>
             </div>
@@ -79,17 +79,17 @@ export default function Hero({ onOpenContact }) {
               </div>
 
               <div className="space-y-4">
-                {/* Card 1: Salesforce */}
+                {/* Card 1: Custom Software */}
                 <div className="p-4 rounded-2xl bg-[#0B132B] border border-slate-800/90 flex items-start gap-4">
                   <div className="w-10 h-10 rounded-xl bg-[#0284C7]/15 border border-[#0284C7]/30 flex items-center justify-center shrink-0 mt-0.5">
-                    <Cloud className="w-5 h-5 text-[#0284C7]" />
+                    <Laptop className="w-5 h-5 text-[#0284C7]" />
                   </div>
                   <div>
                     <h4 className="font-bold text-white text-sm sm:text-base">
-                      Consultoria & Implementação Salesforce
+                      Plataformas & Sistemas Sob Medida
                     </h4>
                     <p className="text-xs sm:text-sm text-slate-400 mt-1 leading-relaxed">
-                      Organize seu funil de vendas, automatize o follow-up comercial e tenha relatórios precisos para decisões rápidas.
+                      Ferramentas exclusivas, painéis de controle e aplicações web desenhadas para organizar sua operação e escalar vendas.
                     </p>
                   </div>
                 </div>
@@ -104,22 +104,22 @@ export default function Hero({ onOpenContact }) {
                       Agentes de Inteligência Artificial
                     </h4>
                     <p className="text-xs sm:text-sm text-slate-400 mt-1 leading-relaxed">
-                      Atendimento inteligente 24/7, triagem de leads, leitura automática de documentos e assistentes internos para sua equipe.
+                      Atendimento inteligente 24/7, triagem de clientes, análise automática de documentos e assistentes internos para sua equipe.
                     </p>
                   </div>
                 </div>
 
-                {/* Card 3: Systems & Integrations */}
+                {/* Card 3: Automations & Integrations */}
                 <div className="p-4 rounded-2xl bg-[#0B132B] border border-slate-800/90 flex items-start gap-4">
                   <div className="w-10 h-10 rounded-xl bg-[#84CC16]/15 border border-[#84CC16]/30 flex items-center justify-center shrink-0 mt-0.5">
                     <Layers className="w-5 h-5 text-[#84CC16]" />
                   </div>
                   <div>
                     <h4 className="font-bold text-white text-sm sm:text-base">
-                      Sistemas & Integrações Corporativas
+                      Automação & Integração de Processos
                     </h4>
                     <p className="text-xs sm:text-sm text-slate-400 mt-1 leading-relaxed">
-                      Conecte seu CRM ao ERP, WhatsApp e financeiro em tempo real, eliminando retrabalho e erros manuais.
+                      Conecte suas ferramentas comerciais, WhatsApp, atendimento e financeiro em tempo real, eliminando retrabalho manual.
                     </p>
                   </div>
                 </div>

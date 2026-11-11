@@ -1,21 +1,7 @@
 import React from 'react';
-import { Cloud, Bot, Workflow, LayoutDashboard, ArrowUpRight, Check } from 'lucide-react';
+import { Bot, LayoutDashboard, Workflow, Compass, ArrowUpRight, Check } from 'lucide-react';
 
 const solutions = [
-  {
-    icon: Cloud,
-    color: 'text-[#0284C7]',
-    bg: 'bg-[#0284C7]/10 border-[#0284C7]/25',
-    badge: 'Especialidade Principal',
-    title: 'Consultoria Salesforce & CRM',
-    description:
-      'Transformamos o Salesforce no motor comercial da sua empresa. Da implementação inicial à customização avançada, organizamos seu processo de vendas para escalar com previsibilidade.',
-    features: [
-      'Implementação de Sales Cloud e Service Cloud',
-      'Automação de fluxos comerciais e funil de vendas',
-      'Dashboards gerenciais e previsão de receita em tempo real',
-    ],
-  },
   {
     icon: Bot,
     color: 'text-[#22C55E]',
@@ -27,7 +13,21 @@ const solutions = [
     features: [
       'Agentes de IA para atendimento e pré-vendas 24/7',
       'Assistentes corporativos treinados com os dados da empresa',
-      'Análise inteligente e leitura automática de documentos',
+      'Leitura e análise automática de documentos e contratos',
+    ],
+  },
+  {
+    icon: LayoutDashboard,
+    color: 'text-[#0284C7]',
+    bg: 'bg-[#0284C7]/10 border-[#0284C7]/25',
+    badge: 'Exclusivo para sua Empresa',
+    title: 'Sistemas & Plataformas Sob Medida',
+    description:
+      'Quando ferramentas prontas não atendem à realidade da sua operação, criamos sistemas exclusivos, fáceis de usar e projetados exatamente para a rotina do seu negócio.',
+    features: [
+      'Portais exclusivos para clientes, fornecedores e equipe',
+      'Painéis de gestão e indicadores estratégicos em tempo real',
+      'Aplicações web rápidas, seguras e preparadas para crescer',
     ],
   },
   {
@@ -35,27 +35,27 @@ const solutions = [
     color: 'text-[#84CC16]',
     bg: 'bg-[#84CC16]/10 border-[#84CC16]/25',
     badge: 'Eficiência Operacional',
-    title: 'Automação & Integrações',
+    title: 'Automação & Integração de Processos',
     description:
-      'Acabe com o retrabalho e as planilhas desconectadas. Conectamos seu CRM, ERP, WhatsApp e sistema financeiro para que as informações fluam automaticamente sem erros humanos.',
+      'Acabe com o retrabalho e as planilhas desconectadas. Conectamos suas ferramentas de vendas, WhatsApp, atendimento e financeiro para que tudo funcione em sintonia.',
     features: [
-      'Integração completa entre Salesforce, ERPs e WhatsApp',
+      'Integração completa entre sistemas internos, WhatsApp e financeiro',
       'Eliminação de tarefas manuais repetitivas entre setores',
-      'Notificações automáticas e sincronização em tempo real',
+      'Relatórios, alertas e fluxos de aprovação automatizados',
     ],
   },
   {
-    icon: LayoutDashboard,
+    icon: Compass,
     color: 'text-emerald-400',
     bg: 'bg-emerald-500/10 border-emerald-500/25',
-    badge: 'Sob Medida',
-    title: 'Plataformas & Portais Corporativos',
+    badge: 'Visão Estratégica',
+    title: 'Consultoria & Modernização Digital',
     description:
-      'Quando ferramentas prontas não atendem à realidade da sua operação, criamos sistemas exclusivos, fáceis de usar e projetados exatamente para as regras do seu negócio.',
+      'Ajudamos sua empresa a tomar as melhores decisões tecnológicas com clareza, substituindo processos lentos por soluções modernas que trazem retorno real.',
     features: [
-      'Portais exclusivos para atendimento a clientes e parceiros',
-      'Painéis de gestão sob medida para diretores e gestores',
-      'Acompanhamento evolutivo e suporte especializado',
+      'Mapeamento de gargalos comerciais e operacionais',
+      'Estruturação de ferramentas e fluxos digitais escaláveis',
+      'Suporte próximo e evolução contínua junto ao seu negócio',
     ],
   },
 ];
@@ -74,7 +74,7 @@ export default function Solutions({ onOpenContact }) {
             </h2>
           </div>
           <p className="text-slate-400 max-w-md text-sm sm:text-base">
-            Soluções pensadas para gerar retorno financeiro, economizar horas da sua equipe e estruturar o crescimento do seu negócio.
+            Soluções digitais pensadas para gerar retorno financeiro, economizar horas da sua equipe e estruturar o crescimento do seu negócio.
           </p>
         </div>
 

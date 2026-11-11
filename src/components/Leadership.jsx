@@ -19,7 +19,7 @@ export default function Leadership({ onOpenContact }) {
               </h2>
 
               <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-                A <strong className="text-white">Olivario Software</strong> é liderada por <strong className="text-white">Mário Fernandes</strong>. Combinamos visão estratégica de negócios com domínio prático em ecossistemas Salesforce, Inteligência Artificial e desenvolvimento corporativo para garantir entregas no prazo e resultados reais.
+                A <strong className="text-white">Olivario Software</strong> é liderada por <strong className="text-white">Mário Fernandes</strong>. Combinamos visão estratégica de negócios com domínio prático em automação, Inteligência Artificial e desenvolvimento de soluções corporativas para garantir entregas no prazo e resultados reais.
               </p>
 
               <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -68,7 +68,7 @@ export default function Leadership({ onOpenContact }) {
                 <div className="space-y-3 pt-4 border-t border-slate-800/80 text-sm text-slate-300">
                   <div className="flex items-center gap-3">
                     <Briefcase className="w-4 h-4 text-[#22C55E] shrink-0" />
-                    <span>Consultoria Salesforce • Soluções em IA • Sistemas</span>
+                    <span>Sistemas Sob Medida • Soluções em IA • Automação</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail className="w-4 h-4 text-[#22C55E] shrink-0" />
