@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ExternalLink, Terminal } from 'lucide-react';
+import { Menu, X, ExternalLink, MessageSquare } from 'lucide-react';
 
 export default function Navbar({ onOpenContact }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,13 +21,13 @@ export default function Navbar({ onOpenContact }) {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-[#0B132B]/90 backdrop-blur-md border-b border-slate-800/80 shadow-lg'
+          ? 'bg-[#0B132B]/95 backdrop-blur-md border-b border-slate-800/80 shadow-lg'
           : 'bg-transparent border-b border-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Official Brand Logo (Minimum width >= 140px, 1.5X protection zone) */}
+          {/* Official Brand Logo */}
           <a
             href="#top"
             onClick={(e) => {
@@ -47,22 +47,22 @@ export default function Navbar({ onOpenContact }) {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
             <button
-              onClick={() => handleNavClick('dna')}
-              className="hover:text-[#22C55E] transition-colors"
-            >
-              Essência
-            </button>
-            <button
               onClick={() => handleNavClick('solucoes')}
               className="hover:text-[#22C55E] transition-colors"
             >
               Soluções
             </button>
             <button
-              onClick={() => handleNavClick('arquitetura')}
+              onClick={() => handleNavClick('dna')}
               className="hover:text-[#22C55E] transition-colors"
             >
-              Engenharia
+              Sobre Nós
+            </button>
+            <button
+              onClick={() => handleNavClick('metodologia')}
+              className="hover:text-[#22C55E] transition-colors"
+            >
+              Como Trabalhamos
             </button>
             <button
               onClick={() => handleNavClick('lideranca')}
@@ -82,16 +82,12 @@ export default function Navbar({ onOpenContact }) {
 
           {/* Action CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-[#0F172A] border border-slate-800 text-xs font-mono text-slate-300">
-              <span className="w-2 h-2 rounded-full bg-[#22C55E] animate-pulse"></span>
-              Systems Online
-            </div>
             <button
               onClick={onOpenContact}
-              className="px-5 py-2.5 rounded-lg bg-[#22C55E] hover:bg-[#16A34A] text-[#0B132B] font-semibold text-sm transition-all shadow-lg shadow-[#22C55E]/20 flex items-center gap-2"
+              className="px-5 py-2.5 rounded-xl bg-[#22C55E] hover:bg-[#16A34A] text-[#0B132B] font-bold text-sm transition-all shadow-lg shadow-[#22C55E]/20 flex items-center gap-2"
             >
-              <Terminal className="w-4 h-4" />
-              Iniciar Projeto
+              <MessageSquare className="w-4 h-4" />
+              Agendar Diagnóstico
             </button>
           </div>
 
@@ -112,22 +108,22 @@ export default function Navbar({ onOpenContact }) {
       {isOpen && (
         <div className="md:hidden bg-[#0F172A] border-b border-slate-800 px-4 pt-2 pb-6 space-y-3 shadow-2xl">
           <button
-            onClick={() => handleNavClick('dna')}
-            className="block w-full text-left px-3 py-2.5 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-[#22C55E] font-medium"
-          >
-            Essência
-          </button>
-          <button
             onClick={() => handleNavClick('solucoes')}
             className="block w-full text-left px-3 py-2.5 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-[#22C55E] font-medium"
           >
             Soluções
           </button>
           <button
-            onClick={() => handleNavClick('arquitetura')}
+            onClick={() => handleNavClick('dna')}
             className="block w-full text-left px-3 py-2.5 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-[#22C55E] font-medium"
           >
-            Engenharia
+            Sobre Nós
+          </button>
+          <button
+            onClick={() => handleNavClick('metodologia')}
+            className="block w-full text-left px-3 py-2.5 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-[#22C55E] font-medium"
+          >
+            Como Trabalhamos
           </button>
           <button
             onClick={() => handleNavClick('lideranca')}
@@ -152,8 +148,8 @@ export default function Navbar({ onOpenContact }) {
               }}
               className="w-full px-4 py-3 rounded-lg bg-[#22C55E] text-[#0B132B] font-bold text-center flex items-center justify-center gap-2"
             >
-              <Terminal className="w-4 h-4" />
-              Iniciar Projeto
+              <MessageSquare className="w-4 h-4" />
+              Agendar Diagnóstico
             </button>
           </div>
         </div>
@@ -161,4 +157,3 @@ export default function Navbar({ onOpenContact }) {
     </header>
   );
 }
-

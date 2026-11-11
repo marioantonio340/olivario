@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import BrandDNA from './components/BrandDNA';
 import Solutions from './components/Solutions';
-import Architecture from './components/Architecture';
+import BrandDNA from './components/BrandDNA';
+import Methodology from './components/Methodology';
 import Leadership from './components/Leadership';
 import Footer from './components/Footer';
 import ContactModal from './components/ContactModal';
@@ -17,9 +17,9 @@ export default function App() {
 
       <main className="flex-grow">
         <Hero onOpenContact={() => setIsContactOpen(true)} />
-        <BrandDNA />
         <Solutions onOpenContact={() => setIsContactOpen(true)} />
-        <Architecture />
+        <BrandDNA />
+        <Methodology onOpenContact={() => setIsContactOpen(true)} />
         <Leadership onOpenContact={() => setIsContactOpen(true)} />
       </main>
 

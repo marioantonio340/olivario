@@ -1,46 +1,62 @@
 import React from 'react';
-import { Layers, Bot, Server, Code2, ArrowUpRight } from 'lucide-react';
+import { Cloud, Bot, Workflow, LayoutDashboard, ArrowUpRight, Check } from 'lucide-react';
 
 const solutions = [
   {
-    icon: Layers,
-    color: 'text-[#22C55E]',
-    bg: 'bg-[#22C55E]/10 border-[#22C55E]/25',
-    title: 'Plataformas Web & SaaS',
-    tag: 'Full-Stack Engineering',
+    icon: Cloud,
+    color: 'text-[#0284C7]',
+    bg: 'bg-[#0284C7]/10 border-[#0284C7]/25',
+    badge: 'Especialidade Principal',
+    title: 'Consultoria Salesforce & CRM',
     description:
-      'Construção de aplicações web modernas, painéis corporativos e produtos SaaS sob medida com foco em usabilidade, performance e escala.',
-    features: ['React, TypeScript & Node.js', 'Arquitetura Multi-Tenant', 'Interfaces Responsivas WCAG AA'],
+      'Transformamos o Salesforce no motor comercial da sua empresa. Da implementação inicial à customização avançada, organizamos seu processo de vendas para escalar com previsibilidade.',
+    features: [
+      'Implementação de Sales Cloud e Service Cloud',
+      'Automação de fluxos comerciais e funil de vendas',
+      'Dashboards gerenciais e previsão de receita em tempo real',
+    ],
   },
   {
     icon: Bot,
+    color: 'text-[#22C55E]',
+    bg: 'bg-[#22C55E]/10 border-[#22C55E]/25',
+    badge: 'Alta Produtividade',
+    title: 'Soluções de Inteligência Artificial',
+    description:
+      'Aplicamos Inteligência Artificial prática no dia a dia do seu negócio para atender clientes instantaneamente, qualificar oportunidades e acelerar a operação da sua equipe.',
+    features: [
+      'Agentes de IA para atendimento e pré-vendas 24/7',
+      'Assistentes corporativos treinados com os dados da empresa',
+      'Análise inteligente e leitura automática de documentos',
+    ],
+  },
+  {
+    icon: Workflow,
     color: 'text-[#84CC16]',
     bg: 'bg-[#84CC16]/10 border-[#84CC16]/25',
-    title: 'Agentes de IA & Automação',
-    tag: 'Autonomous Pipelines',
+    badge: 'Eficiência Operacional',
+    title: 'Automação & Integrações',
     description:
-      'Desenvolvimento de sistemas autônomos para orquestração de dados, fluxos inteligentes e redução de trabalho operacional.',
-    features: ['Pipelines Autônomos 24/7', 'Integração LLMs & APIs Corporativas', 'Processamento Assíncrono'],
+      'Acabe com o retrabalho e as planilhas desconectadas. Conectamos seu CRM, ERP, WhatsApp e sistema financeiro para que as informações fluam automaticamente sem erros humanos.',
+    features: [
+      'Integração completa entre Salesforce, ERPs e WhatsApp',
+      'Eliminação de tarefas manuais repetitivas entre setores',
+      'Notificações automáticas e sincronização em tempo real',
+    ],
   },
   {
-    icon: Server,
-    color: 'text-[#0284C7]',
-    bg: 'bg-[#0284C7]/10 border-[#0284C7]/25',
-    title: 'Cloud, APIs & Microsserviços',
-    tag: 'Distributed Infrastructure',
-    description:
-      'Projeto e implantação de APIs REST/GraphQL de alta disponibilidade, integrações críticas entre sistemas e governança na nuvem.',
-    features: ['AWS, Cloudflare & GitHub Actions', 'Segurança OAuth2 & Zero Trust', 'Alta Disponibilidade'],
-  },
-  {
-    icon: Code2,
+    icon: LayoutDashboard,
     color: 'text-emerald-400',
     bg: 'bg-emerald-500/10 border-emerald-500/25',
-    title: 'Modernização & Consultoria',
-    tag: 'Technical Leadership',
+    badge: 'Sob Medida',
+    title: 'Plataformas & Portais Corporativos',
     description:
-      'Auditoria de código, refatoração de sistemas legados, otimização de banco de dados e consultoria estratégica para equipes de tecnologia.',
-    features: ['Clean Code & Domain-Driven Design', 'Otimização de Performance', 'Mentoria Arquitetural'],
+      'Quando ferramentas prontas não atendem à realidade da sua operação, criamos sistemas exclusivos, fáceis de usar e projetados exatamente para as regras do seu negócio.',
+    features: [
+      'Portais exclusivos para atendimento a clientes e parceiros',
+      'Painéis de gestão sob medida para diretores e gestores',
+      'Acompanhamento evolutivo e suporte especializado',
+    ],
   },
 ];
 
@@ -50,15 +66,15 @@ export default function Solutions({ onOpenContact }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
           <div className="max-w-2xl">
-            <p className="text-sm font-mono uppercase tracking-wider text-[#22C55E] mb-2">
-              02 // Soluções & Capacidades
+            <p className="text-sm font-semibold uppercase tracking-wider text-[#22C55E] mb-2">
+              Nossas Soluções
             </p>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
-              Engenharia orientada a resultados concretos.
+              O que fazemos para impulsionar a sua empresa.
             </h2>
           </div>
           <p className="text-slate-400 max-w-md text-sm sm:text-base">
-            Evitamos jargões vazios. Entregamos sistemas estruturados para sustentar o crescimento do seu negócio.
+            Soluções pensadas para gerar retorno financeiro, economizar horas da sua equipe e estruturar o crescimento do seu negócio.
           </p>
         </div>
 
@@ -75,12 +91,12 @@ export default function Solutions({ onOpenContact }) {
                     <div className={`w-12 h-12 rounded-xl border flex items-center justify-center ${item.bg}`}>
                       <Icon className={`w-6 h-6 ${item.color}`} />
                     </div>
-                    <span className="text-xs font-mono px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-slate-400">
-                      {item.tag}
+                    <span className="text-xs font-semibold px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-slate-300">
+                      {item.badge}
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#22C55E] transition-colors">
+                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-[#22C55E] transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
@@ -89,11 +105,12 @@ export default function Solutions({ onOpenContact }) {
                 </div>
 
                 <div>
-                  <div className="border-t border-slate-800/80 pt-5 mb-4">
-                    <ul className="space-y-2">
+                  <div className="border-t border-slate-800/80 pt-5 mb-5">
+                    <ul className="space-y-2.5">
                       {item.features.map((feat, fIdx) => (
-                        <li key={fIdx} className="text-xs sm:text-sm font-mono text-slate-400 flex items-center gap-2">
-                          <span className="text-[#22C55E]">›</span> {feat}
+                        <li key={fIdx} className="text-sm text-slate-300 flex items-start gap-2.5">
+                          <Check className="w-4 h-4 text-[#22C55E] shrink-0 mt-0.5" />
+                          <span>{feat}</span>
                         </li>
                       ))}
                     </ul>
@@ -101,9 +118,9 @@ export default function Solutions({ onOpenContact }) {
 
                   <button
                     onClick={onOpenContact}
-                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#22C55E] hover:text-[#84CC16] transition-colors"
+                    className="inline-flex items-center gap-1.5 text-sm font-bold text-[#22C55E] hover:text-[#84CC16] transition-colors"
                   >
-                    Solicitar escopo <ArrowUpRight className="w-4 h-4" />
+                    Falar sobre esta solução <ArrowUpRight className="w-4 h-4" />
                   </button>
                 </div>
               </div>
@@ -114,4 +131,3 @@ export default function Solutions({ onOpenContact }) {
     </section>
   );
 }
-

@@ -30,24 +30,24 @@ export default function ContactModal({ isOpen, onClose }) {
             <Mail className="w-5 h-5 text-[#22C55E]" />
           </div>
           <div>
-            <h3 className="text-xl font-bold text-white">Iniciar Conversa</h3>
-            <p className="text-xs font-mono text-slate-400">Olivario Software • Engenharia</p>
+            <h3 className="text-xl font-bold text-white">Agendar Diagnóstico</h3>
+            <p className="text-xs text-slate-400">Olivario Software • Atendimento Corporativo</p>
           </div>
         </div>
 
         <p className="text-sm text-slate-300 leading-relaxed mb-6">
-          Tem um desafio de arquitetura, precisa desenvolver uma plataforma SaaS ou automatizar processos com IA? Fale diretamente com nossa liderança técnica.
+          Quer estruturar o Salesforce da sua empresa, implementar agentes de Inteligência Artificial ou automatizar processos internos? Entre em contato direto conosco.
         </p>
 
         <div className="space-y-3">
           <div className="flex items-center justify-between p-3.5 rounded-xl bg-[#0B132B] border border-slate-800">
             <div>
-              <p className="text-xs font-mono text-slate-400">E-mail Corporativo</p>
+              <p className="text-xs text-slate-400">E-mail Comercial</p>
               <p className="text-sm font-semibold text-white">{email}</p>
             </div>
             <button
               onClick={handleCopy}
-              className="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-mono text-slate-200 flex items-center gap-1.5 transition-colors"
+              className="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs text-slate-200 flex items-center gap-1.5 transition-colors"
             >
               {copied ? (
                 <>
@@ -62,11 +62,11 @@ export default function ContactModal({ isOpen, onClose }) {
           </div>
 
           <a
-            href={`mailto:${email}?subject=Novo%20Projeto%20-%20Olivario%20Software`}
+            href={`mailto:${email}?subject=Diagnostico%20Empresarial%20-%20Olivario%20Software`}
             className="w-full py-3 rounded-xl bg-[#22C55E] hover:bg-[#16A34A] text-[#0B132B] font-bold text-sm flex items-center justify-center gap-2 transition-colors"
           >
             <Mail className="w-4 h-4" />
-            Abrir no Aplicativo de E-mail
+            Enviar E-mail Agora
           </a>
 
           <a
@@ -76,7 +76,7 @@ export default function ContactModal({ isOpen, onClose }) {
             className="w-full py-3 rounded-xl bg-[#0B132B] hover:bg-slate-800 border border-slate-700 text-slate-200 font-semibold text-sm flex items-center justify-center gap-2 transition-colors"
           >
             <Linkedin className="w-4 h-4 text-[#0284C7]" />
-            Conectar no LinkedIn
+            Conversar pelo LinkedIn
             <ExternalLink className="w-3.5 h-3.5 text-slate-400" />
           </a>
         </div>
@@ -84,4 +84,3 @@ export default function ContactModal({ isOpen, onClose }) {
     </div>
   );
 }
-
