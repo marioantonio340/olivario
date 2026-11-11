@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Mail, MapPin, Linkedin } from 'lucide-react';
+import { Mail, MapPin, Globe } from 'lucide-react';
 
 export default function Footer({ onOpenContact }) {
   const scrollTo = (id) => {
@@ -65,14 +65,12 @@ export default function Footer({ onOpenContact }) {
                 </button>
               </li>
               <li>
-                <a
-                  href="https://portfolio.olivario.com.br"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 hover:text-[#22C55E] transition-colors"
+                <button
+                  onClick={() => scrollTo('contato')}
+                  className="hover:text-[#22C55E] transition-colors"
                 >
-                  Portfólio do Fundador <ExternalLink className="w-3.5 h-3.5" />
-                </a>
+                  Contato
+                </button>
               </li>
             </ul>
           </div>
@@ -81,7 +79,7 @@ export default function Footer({ onOpenContact }) {
           <div className="md:col-span-4 space-y-3">
             <h4 className="text-xs font-semibold uppercase tracking-wider text-white">Atendimento Comercial</h4>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Agende um diagnóstico gratuito para avaliar como podemos otimizar suas vendas e operação.
+              Agende um diagnóstico gratuito para avaliar como podemos otimizar sua operação e seus resultados.
             </p>
             <div className="space-y-2.5 pt-1">
               <button
@@ -91,15 +89,10 @@ export default function Footer({ onOpenContact }) {
                 <Mail className="w-4 h-4 text-[#22C55E]" />
                 contato@olivario.com.br
               </button>
-              <a
-                href="https://www.linkedin.com/in/mariofernandes340/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:text-[#22C55E] transition-colors text-sm"
-              >
-                <Linkedin className="w-4 h-4 text-[#0284C7]" />
-                LinkedIn Corporativo
-              </a>
+              <div className="flex items-center gap-2 text-sm text-slate-400">
+                <Globe className="w-4 h-4 text-[#0284C7]" />
+                olivario.com.br
+              </div>
             </div>
           </div>
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Mail, Copy, Check, Linkedin, ExternalLink } from 'lucide-react';
+import { X, Mail, Copy, Check } from 'lucide-react';
 
 export default function ContactModal({ isOpen, onClose }) {
   const [copied, setCopied] = useState(false);
@@ -36,7 +36,7 @@ export default function ContactModal({ isOpen, onClose }) {
         </div>
 
         <p className="text-sm text-slate-300 leading-relaxed mb-6">
-          Quer desenvolver um sistema sob medida, implementar agentes de Inteligência Artificial ou automatizar processos internos? Entre em contato direto conosco.
+          Quer desenvolver um sistema sob medida, implementar agentes de Inteligência Artificial ou automatizar processos internos? Entre em contato com nossa equipe.
         </p>
 
         <div className="space-y-3">
@@ -63,21 +63,10 @@ export default function ContactModal({ isOpen, onClose }) {
 
           <a
             href={`mailto:${email}?subject=Diagnostico%20Empresarial%20-%20Olivario%20Software`}
-            className="w-full py-3 rounded-xl bg-[#22C55E] hover:bg-[#16A34A] text-[#0B132B] font-bold text-sm flex items-center justify-center gap-2 transition-colors"
+            className="w-full py-3.5 rounded-xl bg-[#22C55E] hover:bg-[#16A34A] text-[#0B132B] font-bold text-sm flex items-center justify-center gap-2 transition-colors"
           >
             <Mail className="w-4 h-4" />
             Enviar E-mail Agora
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/mariofernandes340/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full py-3 rounded-xl bg-[#0B132B] hover:bg-slate-800 border border-slate-700 text-slate-200 font-semibold text-sm flex items-center justify-center gap-2 transition-colors"
-          >
-            <Linkedin className="w-4 h-4 text-[#0284C7]" />
-            Conversar pelo LinkedIn
-            <ExternalLink className="w-3.5 h-3.5 text-slate-400" />
           </a>
         </div>
       </div>

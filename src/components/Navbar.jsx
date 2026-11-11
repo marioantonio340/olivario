@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ExternalLink, MessageSquare } from 'lucide-react';
+import { Menu, X, MessageSquare } from 'lucide-react';
 
 export default function Navbar({ onOpenContact }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -65,19 +65,11 @@ export default function Navbar({ onOpenContact }) {
               Como Trabalhamos
             </button>
             <button
-              onClick={() => handleNavClick('lideranca')}
+              onClick={() => handleNavClick('contato')}
               className="hover:text-[#22C55E] transition-colors"
             >
-              Liderança
+              Contato
             </button>
-            <a
-              href="https://portfolio.olivario.com.br"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-slate-300 hover:text-[#22C55E] transition-colors"
-            >
-              Portfólio <ExternalLink className="w-3.5 h-3.5" />
-            </a>
           </nav>
 
           {/* Action CTA */}
@@ -126,20 +118,11 @@ export default function Navbar({ onOpenContact }) {
             Como Trabalhamos
           </button>
           <button
-            onClick={() => handleNavClick('lideranca')}
+            onClick={() => handleNavClick('contato')}
             className="block w-full text-left px-3 py-2.5 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-[#22C55E] font-medium"
           >
-            Liderança
+            Contato
           </button>
-          <a
-            href="https://portfolio.olivario.com.br"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-between px-3 py-2.5 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-[#22C55E] font-medium"
-          >
-            Portfólio do Fundador
-            <ExternalLink className="w-4 h-4" />
-          </a>
           <div className="pt-2 border-t border-slate-800">
             <button
               onClick={() => {

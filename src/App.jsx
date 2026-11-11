@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import Solutions from './components/Solutions';
 import BrandDNA from './components/BrandDNA';
 import Methodology from './components/Methodology';
-import Leadership from './components/Leadership';
+import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import ContactModal from './components/ContactModal';
 
@@ -20,7 +20,7 @@ export default function App() {
         <Solutions onOpenContact={() => setIsContactOpen(true)} />
         <BrandDNA />
         <Methodology onOpenContact={() => setIsContactOpen(true)} />
-        <Leadership onOpenContact={() => setIsContactOpen(true)} />
+        <ContactSection onOpenContact={() => setIsContactOpen(true)} />
       </main>
 
       <Footer onOpenContact={() => setIsContactOpen(true)} />

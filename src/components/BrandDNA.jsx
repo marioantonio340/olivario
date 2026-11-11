@@ -35,7 +35,7 @@ export default function BrandDNA() {
             </div>
             <h3 className="text-xl font-bold text-white mb-3">Atendimento Direto e Transparente</h3>
             <p className="text-slate-300 leading-relaxed">
-              Aqui você não fala com atendentes genéricos nem enfrenta burocracia de grandes agências. Cada projeto conta com o acompanhamento direto da nossa liderança, falando a língua do seu negócio com total clareza.
+              Aqui você não fala com atendentes genéricos nem enfrenta burocracia de grandes agências. Cada projeto conta com acompanhamento consultivo próximo e equipe especializada, falando a língua do seu negócio com total clareza.
             </p>
           </div>
         </div>
