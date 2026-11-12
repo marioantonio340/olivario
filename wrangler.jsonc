@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "olivario",
+  "compatibility_date": "2026-11-12",
+  "assets": {
+    "directory": "./dist"
+  },
+  "routes": [
+    {
+      "pattern": "olivario.com.br",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.olivario.com.br",
+      "custom_domain": true
+    }
+  ]
+}
